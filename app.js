@@ -158,7 +158,7 @@ if (form) {
     const isRadioValid = validateRadioInput();
     const isCheckValid = validateCheckInput(checkbox);
 
-    if (!allValid && !isRadioValid && !isCheckValid) {
+    if (!allValid || !isRadioValid || !isCheckValid) {
       submitButton.disabled = true;
     } else {
       submitButton.disabled = false;
@@ -176,7 +176,7 @@ if (form) {
     const isRadioValid = validateRadioInput();
     const isCheckValid = validateCheckInput(checkbox);
 
-    if (!formValid && !isRadioValid && !isCheckValid) {
+    if (!formValid || !isRadioValid || !isCheckValid) {
       e.preventDefault();
       submitButton.disabled = true;
     } else {

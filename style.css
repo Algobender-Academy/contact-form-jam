@@ -374,8 +374,84 @@ input[type="checkbox"]:checked + .custom-checkbox {
 
 /* || TABLET */
 @media screen and (min-width: 768px) {
+  body {
+    padding: 8rem 2.4375rem;
+  }
+
+  /* || FORM */
+  .contact-form {
+    width: 690px;
+    min-height: 800px;
+    padding: 2.5rem;
+  }
+
+  /* FORM-POPUP */
+  .popup-content {
+    top: -104px;
+    width: 450px;
+    height: 107px;
+  }
+
+  /* FORM-INNER-CONTAINER */
+  .form-name-wrapper {
+    flex-flow: row;
+    gap: 1rem;
+  }
+
+  .name-wrapper {
+    width: 297px;
+  }
+
+  .email-wrapper,
+  .message-wrapper {
+    width: 610px;
+  }
+
+  .form-radio-group {
+    flex-flow: row;
+  }
+
+  .query-button {
+    width: 297px;
+  }
+
+  textarea {
+    height: 132px;
+    overflow-y: auto;
+  }
+
+  .checkbox-label {
+    max-width: 362px;
+  }
 }
 
 /* || DESKTOP */
 @media screen and (min-width: 992px) {
+  body {
+    padding: 8rem 0rem;
+  }
+
+  /* || FORM */
+  .contact-form {
+    width: 736px;
+    min-height: 773px;
+  }
+
+  /* FORM-INNER-CONTAINER */
+  .name-wrapper {
+    width: 320px;
+  }
+
+  .email-wrapper,
+  .message-wrapper {
+    width: 656px;
+  }
+
+  .query-button {
+    width: 320px;
+  }
+
+  textarea {
+    height: 105px;
+  }
 }

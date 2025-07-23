@@ -320,6 +320,7 @@ textarea.invalid {
 .checkbox-label {
   font: var(--BODY-S);
   color: var(--GREY-900);
+  max-width: 232px;
 }
 
 .checkbox-label span {
@@ -338,6 +339,10 @@ input[type="checkbox"] {
   position: relative;
   flex-shrink: 0;
   flex-grow: 0;
+}
+
+.custom-checkbox.invalid {
+  border-color: var(--ERROR-MESSAGE);
 }
 
 input[type="checkbox"]:checked + .custom-checkbox::after {
@@ -364,6 +369,7 @@ input[type="checkbox"]:checked + .custom-checkbox {
 
 .submit-button:disabled {
   background-color: var(--BUTTON-DISABLED);
+  cursor: not-allowed;
 }
 
 /* || TABLET */

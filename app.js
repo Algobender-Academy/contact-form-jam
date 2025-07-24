@@ -56,6 +56,7 @@ if (form) {
         setError("Name must only contain letters.");
       } else {
         setSuccess("Looks good!");
+        autoCapitalization(input);
       }
     } else if (input.name === "message-input") {
       if (value.length > 2200) {
@@ -73,6 +74,14 @@ if (form) {
       }
     } else {
       setSuccess("Looks good!");
+    }
+
+    function autoCapitalization(inputName) {
+      let value = inputName.value.trim();
+      if (value.length > 0) {
+        value = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+        input.value = value;
+      }
     }
 
     function setError(sms) {

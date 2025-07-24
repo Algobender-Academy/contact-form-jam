@@ -77,11 +77,10 @@ if (form) {
     }
 
     function autoCapitalization(inputName) {
-      let value = inputName.value.trim();
-      if (value.length > 0) {
-        value = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
-        input.value = value;
-      }
+      let value = inputName.value;
+
+      value = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+      input.value = value;
     }
 
     function setError(sms) {

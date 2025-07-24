@@ -183,6 +183,8 @@ h2 {
   border-radius: 8px;
   color: var(--GREY-900);
   font: var(--BODY-M);
+  background-color: white;
+  transition: background-color 9999s ease-in-out 0s;
 }
 
 .name-input::placeholder,
@@ -292,7 +294,9 @@ textarea {
   border-radius: 8px;
   border: 1px solid var(--GREY-500);
   resize: none;
-  overflow-y: scroll;
+  overflow-y: auto;
+  background-color: white;
+  transition: background-color 9999s ease-in-out 0s;
 }
 
 textarea:focus {
